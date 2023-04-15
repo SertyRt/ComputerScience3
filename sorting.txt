@@ -1,11 +1,11 @@
 public void selectionSort(int[] a){
-	for (int king = 0; king < a.length-1; king++) {
-		int jack = king;
-		for (int queen = king+1; queen < a.length; queen++){
-			if (a.[jack] > a[queen]){
-				jack = queen;
+	for (int k = 0; k < a.length-1; k++) {
+		int j = k;
+		for (int q = k+1; q < a.length; q++){
+			if (a.[j] > a[q]){
+				j = q;
 			}
 		}
-		swap(a, king, jack);
+		swap(a, k, j);
 	}
 }
